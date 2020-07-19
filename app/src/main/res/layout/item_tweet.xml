@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/tweetLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/photoAndUserNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/grid_x2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/grid_x1"
+            app:cardCornerRadius="@dimen/standard_corner_radius">
+            <ImageView
+                android:id="@+id/tweetUserSelfie"
+                android:layout_width="@dimen/standard_image"
+                android:layout_height="@dimen/standard_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_user" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tweetUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/grid_x2"
+            android:hint="@string/hint_username" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tweetText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_x2"
+        android:text="내용"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/photoAndUserNameLayout" />
+
+    <ImageView
+        android:id="@+id/tweetImageFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_x2"
+        app:layout_constraintTop_toBottomOf="@+id/tweetText"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/tweetDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_date"
+        app:layout_constraintTop_toBottomOf="@+id/tweetImageFrame" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/grid_x2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tweetDate">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tweetLike"
+                android:layout_width="@dimen/small_image"
+                android:layout_height="@dimen/small_image"
+                android:src="@drawable/like_inactive"
+                android:padding="@dimen/grid_x1"
+                android:background="@null"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tweetLikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/grid_x2"
+                android:textSize="@dimen/standard_text_size"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tweetRetweet"
+                android:layout_width="@dimen/small_image"
+                android:layout_height="@dimen/small_image"
+                android:src="@drawable/retweet_inactive"
+                android:padding="@dimen/grid_x1"
+                android:background="@null"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/tweetRetweetCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/grid_x2"
+                android:textSize="@dimen/standard_text_size"
+                android:text="0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

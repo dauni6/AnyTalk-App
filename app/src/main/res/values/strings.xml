@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">애니톡</string>
+    <string name="hint_email">이메일</string>
+    <string name="hint_password">비밀번호</string>
+    <string name="button_login">로그인</string>
+    <string name="text_signup">계정이 없으신가요?</string>
+    <string name="hint_username">닉네임</string>
+    <string name="button_signup">회원가입</string>
+    <string name="text_login">이미 계정이 있으신가요?</string>
+    <string name="hint_search">검색</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_apply">적용하기</string>
+    <string name="logout_button">로그아웃</string>
+    <string name="hint_tweet_text">당신의 하루를 적어보세요</string>
+    <string name="hint_date">날짜</string>
+</resources>
