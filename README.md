@@ -13,7 +13,7 @@ Thumbnails
 </div>
 
 
-1. Functions
+### 1. Functions
     * 회원가입, 탈퇴, 비밀번호 변경
     * 새로운 피드(글) 작성, 사진,GIF 첨부가능
     * 해시태그 검색가능
@@ -21,11 +21,11 @@ Thumbnails
     * 유저 팔로우
  
  
-2. Server
+### 2. Server
     * Firebase
 
 
-3. Dependencies
+### 3. Dependencies
     * Firebase Database
     * Firebase Storage
     * Firebase Auth
