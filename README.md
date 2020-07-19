@@ -14,21 +14,21 @@ Thumbnails
 
 
 ### 1. Functions
-    * 회원가입, 탈퇴, 비밀번호 변경
-    * 새로운 피드(글) 작성, 사진,GIF 첨부가능
-    * 해시태그 검색가능
-    * 좋아요
-    * 유저 팔로우
+  * 회원가입, 탈퇴, 비밀번호 변경
+  * 새로운 피드(글) 작성, 사진,GIF 첨부가능
+  * 해시태그 검색가능
+  * 좋아요
+  * 유저 팔로우
  
  
 ### 2. Server
-    * Firebase
+  * Firebase
 
 
 ### 3. Dependencies
-    * Firebase Database
-    * Firebase Storage
-    * Firebase Auth
-    * Firebase Core
-    * Multidex
-    * Glide
+  * Firebase Database
+  * Firebase Storage
+  * Firebase Auth
+  * Firebase Core
+  * Multidex
+  * Glide
